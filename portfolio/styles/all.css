@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+Pequenas telas: 600px max
+Celular: 600 até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 1024px){
+    header p{
+        display: block;
+    }
+
+
+    main article p {
+        padding: 20px;
+        background-color: var(--color2);
+        width: calc(100% - 170px);
+        height: 100vh;
+        margin-top: 50px;
+        margin-left: 70px ;
+        color: white;
+        box-sizing: border-box;
+    }
+}
