@@ -73,9 +73,9 @@ nav{
 main article p {
     padding: 20px;
     background-color: var(--color2);
-    width: 50vw;
+    width: 70vw;
     height: 100vh;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 40px;
     color: white;
 }
