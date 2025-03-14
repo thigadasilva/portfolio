@@ -21,14 +21,14 @@ Grandes telas: acima de 1200px
     --color4: #7520C0;
 }
 body{
-    background-image: linear-gradient(to bottom,var(--main), black );
-   background-size: 100% 100%;
-    background-repeat: repeat; 
+    background-image: url(../img/a.jpg);
+   background-size: cover;
+    background-position: center; 
 }
 
 
 header{
-    background-image: linear-gradient(to top,var(--main), black );
+    background-image: linear-gradient(to bottom,var(--main), black );
     padding: 10px;
     color: white;
     box-shadow: 0.5px 0.5px 2px white;
@@ -67,7 +67,6 @@ header nav a{
 }
 nav{
     text-align: right;
-    font-weight: bold;
 }
 
 
