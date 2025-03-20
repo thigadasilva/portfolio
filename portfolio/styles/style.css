@@ -21,9 +21,17 @@ Grandes telas: acima de 1200px
     --color4: #7520C0;
 }
 body{
-    background-image: url(../img/a.jpg);
-   background-size: cover;
-    background-position: center; 
+    background-color: #000000;
+
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url('titulo.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Desc';
+    src: url('desc.ttf') format('truetype');
 }
 
 
@@ -34,16 +42,25 @@ header{
     box-shadow: 0.5px 0.5px 2px white;
 }
 header p{
-    margin-left: 10px;
+    margin-left: 40px;
     margin-bottom: 7px;
     display: none;
+    font-family: 'Desc';
 }
 header a{
     color: white;
     text-decoration: none;
 }
+header h1 a.nome{
+    margin-left: 10px;
+    font-family: 'Titulo';
+    font-weight: normal;
+    font-size: 18px;
+}
+
 
 header h1{
+    
     padding: 5px; 
     color: white;
     font-size: 1em;
@@ -55,7 +72,7 @@ header p{
     font-size: 1em;
     margin-top: 10px;
 }    
-header a:hover{
+header nav a:hover{
     text-decoration: line-through;
     
 }
@@ -69,13 +86,39 @@ nav{
     text-align: right;
 }
 
-
-main article p {
+article{
     padding: 20px;
-    background-color: var(--color2);
     width: 70vw;
     height: 100vh;
     margin-top: 20px;
     margin-left: 40px;
     color: white;
 }
+
+article h1{
+    margin-top: 0.5em;
+    font-size: 3em;
+}
+article h1 strong{
+    color: var(--color4);
+}
+article h2{
+    margin-top: 3em;
+    color: rgb(151, 151, 151);
+    font-weight: normal;
+}
+article a#botao1{
+    display: block;
+    background-color: var(--color4);
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    margin-top: 3em;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+
