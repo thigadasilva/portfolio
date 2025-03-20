@@ -14,9 +14,8 @@ Grandes telas: acima de 1200px
     }
 
 
-    main article p {
+    article{
         padding: 20px;
-        background-color: var(--color2);
         width: calc(100% - 170px);
         height: 100vh;
         margin-top: 50px;
@@ -24,4 +23,13 @@ Grandes telas: acima de 1200px
         color: white;
         box-sizing: border-box;
     }
+
+    article h1{
+        font-size: 2em;
+    }
+    article h2{
+        margin-top: 2em;
+        font-size: 1.5em;
+    }
+
 }
