@@ -34,12 +34,21 @@ body{
     src: url('desc.ttf') format('truetype');
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color2);
+    border-radius: 10px;
+}
+
 
 header{
     background-image: linear-gradient(to bottom,var(--main), black );
     padding: 10px;
     color: white;
-    box-shadow: 0.5px 0.5px 2px white;
+    box-shadow: 0.5px 0.5px 2px rgba(255, 255, 255, 0.137);
 }
 header p{
     margin-left: 40px;
