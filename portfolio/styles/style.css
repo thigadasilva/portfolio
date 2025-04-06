@@ -45,7 +45,7 @@ body{
 
 
 header{
-    background-image: linear-gradient(to bottom,var(--main), black );
+    background-image: black;
     padding: 10px;
     color: white;
     box-shadow: 0.5px 0.5px 2px rgba(255, 255, 255, 0.137);
