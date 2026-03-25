@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Silva - Você imagina, eu projeto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <h1 class="preloader-name">Thiago Silva</h1>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-elements">
+        <!-- Glowing Orbs -->
+        <div class="glow-orb purple-orb"></div>
+        <div class="glow-orb pink-orb"></div>
+        <div class="glow-orb cyan-orb"></div>
+
+        <!-- Abstract Shapes & Details -->
+        <div class="shape shape-polygon" data-speed="1.2"></div>
+        <div class="shape shape-circle" data-speed="2"></div>
+        <div class="shape shape-small-circle" data-speed="1.5"></div>
+
+        <div class="dot-grid"></div>
+        <div class="dot-grid right-grid"></div>
+
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <div class="line line-4"></div>
+    </div>
+
+    <header class="header">
+        <div class="logo">Thiago Silva</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#work">Projetos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title gradient-text">Você imagina<br>eu projeto</h1>
+                <p class="hero-subtitle">Sua visão traduzida em tecnologia.</p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn-primary">Ver meu trabalho <span class="arrow">&rarr;</span></a>
+                    <a href="https://wa.me/5571991764454" target="_blank" class="btn-secondary">Solicitar orçamento</a>
+                </div>
+            </div>
+            <div class="hero-image-placeholder" id="3d-scene-container">
+                <!-- 3D Canvas Here -->
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="work" class="projects-section">
+            <h2 class="section-title gradient-text">Meus Projetos</h2>
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="project3.png" alt="Marcenaria Movelado">
+                        <div class="project-tags">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">Frontend</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-card-title">Marcenaria Movelado</h3>
+                        <p class="project-description">Desenvolvimento de site para a Marcenaria Movelado com catálogo de projetos, seção de serviços e integração de canais de atendimento rápido para orçamentos. Foco em usabilidade e carregamento otimizado.</p>
+                        <a href="https://thigadasilva.github.io/marcenaria" target="_blank" class="project-link">
+                            <span>Ver projeto</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-up-right">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="project2.png" alt="Catálogo">
+                        <div class="project-tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Vue.js</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-card-title">Catálogo</h3>
+                        <p class="project-description">Projeto de Catálogo feito durante o curso de Desenvolvimento de Sistemas no SENAI Lauro de Freitas a fim de testar as competências desenvolvidas no curso.</p>
+                        <a href="https://catalogot.vercel.app/" target="_blank" class="project-link">
+                            <span>Ver projeto</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-up-right">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2 class="about-title gradient-text">Sobre Mim</h2>
+                <p class="about-text">
+                    Desenvolvedor e Designer focado em viabilizar negócios. Transformo ideias em páginas profissionais e
+                    peças visuais estratégicas, unindo técnica e estética. Minha entrega é rápida, autônoma e focada em
+                    resolver sua demanda. Garanto um processo sem burocracia para que você foque no que importa: o
+                    crescimento da sua empresa. Tecnologia, design e agilidade. Soluções prontas para o mercado.
+                </p>
+            </div>
+
+            <!-- Catchphrases (floating bubbles) -->
+            <div class="catchphrase cp-1">Melhor me chamar!</div>
+            <div class="catchphrase cp-2">Eu sou sua melhor opção!</div>
+            <div class="catchphrase cp-3">Você tem um problema?<br>Eu trago a solução!</div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-title gradient-text">Minhas Habilidades</h2>
+
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="cards-wrapper">
+                        <div class="skill-card">HTML5</div>
+                        <div class="skill-card">CSS3</div>
+                        <div class="skill-card">Vue.js</div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3 class="category-title">Backend & APIs</h3>
+                    <div class="cards-wrapper">
+                        <div class="skill-card">Node.js</div>
+                        <div class="skill-card">APIs RESTful</div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="skill-category">
+                    <h3 class="category-title">Linguagens</h3>
+                    <div class="cards-wrapper">
+                        <div class="skill-card">C</div>
+                        <div class="skill-card">Java</div>
+                        <div class="skill-card">JavaScript</div>
+                    </div>
+                </div>
+
+                <!-- Database & Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">Dados & Ferramentas</h3>
+                    <div class="cards-wrapper">
+                        <div class="skill-card">MySQL</div>
+                        <div class="skill-card">SQLite3</div>
+                        <div class="skill-card">GitHub</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2 class="contact-title gradient-text">Vamos Trabalhar Juntos</h2>
+                <p class="contact-subtitle">Tem um projeto em mente? Adoraria ouvir sobre ele. Vamos criar algo incrível
+                    juntos.</p>
+                <a href="mailto:dasilvasantosthi@gmail.com" class="contact-email">dasilvasantosthi@gmail.com</a>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/umthiagodasilva/" target="_blank" class="social-icon"
+                        title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/thigadasilva" target="_blank" class="social-icon" title="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="mailto:dasilvasantosthi@gmail.com" class="social-icon" title="E-mail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <p>&copy; Thiago da Silva, 2026, todos os direitos reservados</p>
+            </footer>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
