@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Silva - Portfolio</title>
+    <meta name="description" content="Portfolio de Thiago Silva - Criação de Sites, Sistemas e Automações">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader" class="screen active">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- MAIN HOME WRAPPER -->
+    <div id="home" class="screen">
+        <header class="home-header">
+            <div class="brand" style="pointer-events: all;">Thiago Silva</div>
+            <div class="header-cta" style="cursor: pointer; pointer-events: all;" onclick="window.open('https://wa.me/5571991764454', '_blank')">Contate-me</div>
+        </header>
+
+        <!-- CIRCULAR NAVIGATION HUB -->
+        <div class="nav-hub">
+            <div class="nav-circle">
+                <!-- Crosshairs -->
+                <div class="crosshair-v"></div>
+                <div class="crosshair-h"></div>
+                
+                <!-- Quadrants as clickable zones -->
+                <div class="quadrant top-left" data-target="section-about">
+                    <div class="icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                </div>
+                <div class="quadrant top-right" data-target="section-projects">
+                    <div class="icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                </div>
+                <div class="quadrant bottom-left" data-target="section-skills">
+                    <div class="icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    </div>
+                </div>
+                <div class="quadrant bottom-right" data-target="section-contact">
+                    <div class="icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTIONS (OVERLAYS) -->
+    
+    <!-- 1. ABOUT (Top Left) -->
+    <div id="section-about" class="screen overlay from-top-left">
+        <button class="back-btn">&lt;</button>
+        <div class="overlay-content split-layout">
+            <div class="left-col align-center">
+                <div class="profile-frame">
+                    <img src="eu-removebg-preview.png" alt="Thiago Silva Profile">
+                    <div class="profile-label">Thiago Silva</div>
+                </div>
+            </div>
+            <div class="right-col align-center">
+                <div class="text-block">
+                    <p class="lined-text">Olá, eu sou Thiago, um desenvolvedor movido a desafios.</p>
+                    <p class="lined-text">Especialista em construir soluções web completas e envolventes.</p>
+                    <p class="lined-text">Unindo design cuidadoso com engenharia robusta em cada projeto.</p>
+                    <p class="lined-text">Meu foco é entregar a melhor experiência de usuário possível.</p>
+                    <button class="ghost-btn mt-md" onclick="window.open('https://wa.me/5571991764454', '_blank')">Contate-me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. CONTACT (Top Right) -->
+    <div id="section-contact" class="screen overlay from-top-right">
+        <button class="back-btn">&lt;</button>
+        <div class="overlay-content center-layout">
+            <h1 class="main-heading">Vamos trabalhar juntos</h1>
+            <p class="sub-heading">Tem um projeto em mente? Adoraria ouvir sobre ele.<br>Vamos criar algo incrível juntos.</p>
+            <div class="social-dots">
+                <a href="https://instagram.com/dasilva.code" target="_blank" rel="noopener noreferrer" class="dot tooltip-wrap" data-tooltip="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://linkedin.com/in/thigadasilva" target="_blank" rel="noopener noreferrer" class="dot tooltip-wrap" data-tooltip="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://github.com/thigadasilva" target="_blank" rel="noopener noreferrer" class="dot tooltip-wrap" data-tooltip="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="mailto:dasilvacoding@gmail.com" class="dot tooltip-wrap" data-tooltip="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+            <div class="footer-area">
+                <p class="copyright">© Thiago da Silva, 2026, todos os direitos reservados</p>
+                <a href="#" class="yellow-link">Me compre um café</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. PROJECTS (Bottom Left) -->
+    <div id="section-projects" class="screen overlay from-bottom-left">
+        <button class="back-btn">&lt;</button>
+        <div class="overlay-content split-layout reverse">
+            <div class="left-col gap-md hide-scrollbar card-scroller">
+                <div class="project-card">
+                    <div class="card-image video-card">
+                        <video src="movelado.mp4" poster="movelado.png" loop muted playsinline disablePictureInPicture></video>
+                    </div>
+                    <div class="card-label">Movelado Marcenaria</div>
+                    <button class="ghost-btn" style="width: 100%; border-top: none;" onclick="window.open('https://movelado.com.br', '_blank')">Acessar Site</button>
+                </div>
+                <div class="project-card mt-sm">
+                    <div class="card-image video-card">
+                        <video src="catalogo.mp4" poster="catalogo.png" loop muted playsinline disablePictureInPicture></video>
+                    </div>
+                    <div class="card-label">Catálogo</div>
+                    <button class="ghost-btn" style="width: 100%; border-top: none;" onclick="window.open('https://catalogot.vercel.app/', '_blank')">Acessar Site</button>
+                </div>
+            </div>
+            <div class="right-col align-center">
+                <div class="text-block">
+                    <h2 class="sub-heading mb-sm">Meus Projetos Recentes</h2>
+                    <p class="plain-text mb-md text-muted">Uma coleção dos meus trabalhos mais recentes, mostrando a habilidade de resolver problemas complexos com soluções elegantes. Cada interface foi pensada para entregar valor absoluto.</p>
+                    <div class="button-group">
+                        <button class="ghost-btn highlight" onclick="window.open('https://wa.me/5571991764454', '_blank')">Contate-me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. SKILLS (Bottom Right) -->
+    <div id="section-skills" class="screen overlay from-bottom-right">
+        <button class="back-btn">&lt;</button>
+        <div class="overlay-content page-layout scrollable hide-scrollbar">
+            <h1 class="main-heading text-left">Competências</h1>
+            <div class="skills-grid mt-md">
+                <div class="skill-box border-box">
+                    <h3 class="box-title">Criação de Sites e Interfaces</h3>
+                    <div class="tags-grid">
+                        <div class="empty-tag">UX/UI</div><div class="empty-tag">HTML5</div><div class="empty-tag">CSS3</div>
+                        <div class="empty-tag">Figma</div><div class="empty-tag">Vue.js</div>
+                    </div>
+                </div>
+                <div class="skill-box border-box">
+                    <h3 class="box-title">Sistemas e Automações</h3>
+                    <div class="tags-grid">
+                        <div class="empty-tag">Node.js</div><div class="empty-tag">Java</div><div class="empty-tag">APIs</div>
+                    </div>
+                </div>
+                <div class="skill-box border-box">
+                    <h3 class="box-title">Armazenamento e Ferramentas</h3>
+                    <div class="tags-grid">
+                        <div class="empty-tag">MySQL</div><div class="empty-tag">SQLite3</div><div class="empty-tag">GitHub</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h1 class="main-heading text-left mt-xl">Escolaridade</h1>
+            <div class="education-box border-box mt-md">
+                <div class="edu-item">
+                    <h3 class="box-title edu-title">Ensino Técnico</h3>
+                    <p class="edu-desc text-muted">Análise e Desenvolvimento de Sistemas. Experiência robusta em lógicas de programação e estruturação de bancos de dados modernos.</p>
+                </div>
+                <div class="edu-separator"></div>
+                <div class="edu-item">
+                    <h3 class="box-title edu-title">Ensino Superior</h3>
+                    <p class="edu-desc text-muted">Em breve...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
