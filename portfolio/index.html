@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Silva | Soluções Web</title>
+    <meta name="description" content="Portfolio de Thiago Silva - Criação de Sites, Sistemas e Automações">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="TS.webp" type="image/x-icon">
+</head>
+<body>
+
+    <!-- STARFIELD BACKGROUND -->
+    <canvas id="starfield-canvas"></canvas>
+
+    <div id="preloader">
+        <div class="preloader-inner">
+            <p class="preloader-text">Carregando o site...</p>
+            <div class="preloader-bar-track">
+                <div class="preloader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER & NAV -->
+    <header class="home-header">
+        <div class="brand"><a href="#hero" style="color: inherit; text-decoration: none;">Thiago Silva</a></div>
+        <nav class="main-nav" id="main-nav">
+            <a href="#section-projects" class="nav-link">Projetos</a>
+            <a href="#section-about" class="nav-link">Sobre</a>
+            <a href="#section-skills" class="nav-link">Habilidades</a>
+            <a href="#section-contact" class="nav-link">Contato</a>
+        </nav>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu" aria-expanded="false">
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+        </button>
+    </header>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- MAIN CONTENT SCROLLABLE -->
+    <main class="main-content">
+        <!-- HERO SECTION -->
+        <section id="hero" class="page-section hero-section">
+            <div class="hero-content center-layout">
+                <h1 class="main-heading hero-typing-container">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </h1>
+                <div class="hero-cta-group">
+                    <a href="#section-projects" class="ghost-btn hero-slide-btn">
+                        <span class="btn-sizer" aria-hidden="true">Ver Projetos</span>
+                        <span class="btn-slide-track" aria-hidden="true">
+                            <span class="slide-text">Ver Projetos</span>
+                            <span class="slide-text">Ver Projetos</span>
+                            <span class="slide-text">Ver Projetos</span>
+                            <span class="slide-text">Ver Projetos</span>
+                        </span>
+                    </a>
+                    <a href="https://wa.me/5571991764454" target="_blank" class="ghost-btn highlight hero-slide-btn">
+                        <span class="btn-sizer" aria-hidden="true">Contate-me</span>
+                        <span class="btn-slide-track" aria-hidden="true">
+                            <span class="slide-text">Contate-me</span>
+                            <span class="slide-text">Contate-me</span>
+                            <span class="slide-text">Contate-me</span>
+                            <span class="slide-text">Contate-me</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. PROJECTS -->
+        <section id="section-projects" class="page-section section-dark-bg">
+            <div class="section-content projects-layout">
+                <!-- Título no topo -->
+                <h2 class="projects-heading">Meus Projetos Recentes</h2>
+
+                <!-- Grade de projetos -->
+                <div class="projects-grid">
+                    <div class="project-card"
+                         data-title="Movelado Marcenaria"
+                         data-desc="Site institucional desenvolvido para a Movelado Marcenaria, com foco em apresentar seus serviços e produtos de forma elegante. A interface foi projetada para transmitir sofisticação e gerar conversões para o negócio."
+                         data-link="https://movelado.com.br">
+                        <div class="card-image" style="background-image: url('movelado.webp');">
+                        </div>
+                        <div class="card-hover-overlay">
+                            <span class="card-hover-label">Ver Projeto</span>
+                        </div>
+                    </div>
+                    <div class="project-card"
+                         data-title="Catálogo Digital"
+                         data-desc="Plataforma de catálogo digital interativo com navegação fluida e design responsivo. Desenvolvida para facilitar a apresentação de produtos de forma visual e moderna, com experiência de usuário aprimorada."
+                         data-link="https://catalogot.vercel.app/">
+                        <div class="card-image" style="background-image: url('catalogo.webp');">
+                        </div>
+                        <div class="card-hover-overlay">
+                            <span class="card-hover-label">Ver Projeto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botões -->
+                <div class="projects-btn-group">
+                    <a href="https://wa.me/5571991764454" target="_blank" class="ghost-btn highlight hero-slide-btn" id="projects-contact-btn">
+                        <span class="btn-sizer" aria-hidden="true">Contate-me</span>
+                        <span class="btn-slide-track" aria-hidden="true">
+                            <span class="slide-text">Contate-me</span>
+                            <span class="slide-text">Contate-me</span>
+                            <span class="slide-text">Contate-me</span>
+                            <span class="slide-text">Contate-me</span>
+                        </span>
+                    </a>
+                    <button class="ghost-btn hero-slide-btn" id="open-sidebar-btn">
+                        <span class="btn-sizer" aria-hidden="true">Ver Mais Projetos</span>
+                        <span class="btn-slide-track" aria-hidden="true">
+                            <span class="slide-text">Ver Mais Projetos</span>
+                            <span class="slide-text">Ver Mais Projetos</span>
+                            <span class="slide-text">Ver Mais Projetos</span>
+                            <span class="slide-text">Ver Mais Projetos</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- OVERLAY de detalhes do projeto -->
+        <div id="project-overlay" class="project-overlay" role="dialog" aria-modal="true" aria-label="Detalhes do Projeto">
+            <div class="overlay-panel">
+                <button class="overlay-close-btn" id="overlay-close-btn" aria-label="Fechar">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+                <h3 class="overlay-title" id="overlay-title">Nome do Projeto</h3>
+                <p class="overlay-desc" id="overlay-desc">Descrição do projeto.</p>
+                <a href="#" class="ghost-btn overlay-access-btn" id="overlay-access-btn" target="_blank" rel="noopener noreferrer">Acessar</a>
+            </div>
+        </div>
+
+        <!-- SIDEBAR de mais projetos -->
+        <div id="projects-sidebar" class="projects-sidebar" role="dialog" aria-modal="true" aria-label="Mais Projetos">
+            <div class="sidebar-header">
+                <span class="sidebar-title">OUTROS PROJETOS</span>
+                <button class="sidebar-close-btn" id="sidebar-close-btn" aria-label="Fechar">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <ul class="sidebar-project-list">
+                <li class="sidebar-project-item">
+                    <span class="sidebar-proj-name">RevelandoTudo</span>
+                    <button class="ghost-btn sidebar-project-btn" data-title="RevelandoTudo" data-desc="Plataforma para gestão e acompanhamento de demandas em instituições. Permite abertura, acompanhamento e gerenciamento de chamados. Possui autenticação, diferentes níveis de acesso e painel administrativo. Desenvolvido com Vue.js, Node.js, Express, Sequelize e SQLite." data-link="" style="padding: 6px 16px; font-size: 0.75rem;">Ver Projeto</button>
+                    <span class="sidebar-proj-year">2026</span>
+                </li>
+                <li class="sidebar-project-item">
+                    <span class="sidebar-proj-name">MedicareClinic</span>
+                    <button class="ghost-btn sidebar-project-btn" data-title="MedicareClinic" data-desc="Sistema de gestão desenvolvido para clínicas médicas. Permite gerenciar pacientes, médicos, especialidades e consultas. Possui painel administrativo para acompanhar e organizar os atendimentos. Desenvolvido com Vue 3, Node.js, Express e SQLite." data-link="" style="padding: 6px 16px; font-size: 0.75rem;">Ver Projeto</button>
+                    <span class="sidebar-proj-year">2026</span>
+                </li>
+                <li class="sidebar-project-item">
+                    <span class="sidebar-proj-name">Casa nova</span>
+                    <button class="ghost-btn sidebar-project-btn" data-title="Casa nova" data-desc="Experiência digital criada para facilitar a escolha e reserva de presentes. Visitantes podem consultar a lista e reservar os produtos desejados. As informações dos convidados são registradas automaticamente em uma planilha. Desenvolvido com Supabase e integração com a DBSheets." data-link="" style="padding: 6px 16px; font-size: 0.75rem;">Ver Projeto</button>
+                    <span class="sidebar-proj-year">2026</span>
+                </li>
+            </ul>
+        </div>
+        <!-- Backdrop da Sidebar -->
+        <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+        <!-- 1. ABOUT -->
+        <section id="section-about" class="page-section">
+            <div class="section-content split-layout">
+                <div class="left-col align-center">
+                    <div class="profile-frame">
+                        <img src="eu.webp" alt="Thiago Silva Profile">
+                        <div class="profile-label">Thiago Silva</div>
+                    </div>
+                </div>
+                <div class="right-col align-center">
+                    <div class="text-block about-aesthetic">
+                        <p class="about-text-aesthetic">
+                            EU GOSTO DE CRIAR. GOSTO DE TECNOLOGIA E, PRINCIPALMENTE, DE VER UMA IDEIA GANHAR VIDA.
+                            PARA MIM, UM BOM PROJETO NÃO É APENAS SOBRE FAZER ALGO FUNCIONAR. É SOBRE CRIAR ALGO QUE FAÇA SENTIDO, QUE TENHA PERSONALIDADE E QUE SEJA BOM DE USAR. <br> <br>
+                            GOSTO DE UNIR DESENVOLVIMENTO E DESIGN PARA TRANSFORMAR IDEIAS EM EXPERIÊNCIAS DIGITAIS.
+                            NO FIM, QUERO QUE CADA PROJETO TENHA ALGO QUE O TORNE INESQUECÍVEL.
+
+                        </p>
+                        <a href="https://wa.me/5571991764454" target="_blank" class="ghost-btn mt-md">Contate-me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SKILLS -->
+        <section id="section-skills" class="page-section section-dark-bg">
+            <div class="section-content page-layout scrollable hide-scrollbar">
+                <h1 class="main-heading text-left">Competências</h1>
+                <div class="skills-grid mt-md">
+                    <div class="skill-box border-box">
+                        <h3 class="box-title">Criação de Sites e Interfaces</h3>
+                        <div class="tags-grid">
+                            <div class="empty-tag">JavaScript</div>
+                            <div class="empty-tag">Figma</div><div class="empty-tag">Vue.js</div>
+                        </div>
+                    </div>
+                    <div class="skill-box border-box">
+                        <h3 class="box-title">Backend e Automações</h3>
+                        <div class="tags-grid">
+                            <div class="empty-tag">Node.js</div><div class="empty-tag">Python</div><div class="empty-tag">Java</div>
+                        </div>
+                    </div>
+                    <div class="skill-box border-box">
+                        <h3 class="box-title">Dados</h3>
+                        <div class="tags-grid">
+                            <div class="empty-tag">MySQL</div><div class="empty-tag">SQLite3</div><div class="empty-tag">Supabase</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="main-heading text-left mt-xl">Escolaridade</h1>
+                <div class="education-box border-box mt-md">
+                    <div class="edu-item">
+                        <h3 class="box-title edu-title">Ensino Técnico</h3>
+                        <p class="edu-desc text-muted">Desenvolvimento de Sistemas — SENAI Lauro de Freitas <br> 2024 - 2026</p>
+                    </div>
+                    <div class="edu-separator"></div>
+                    <div class="edu-item">
+                        <h3 class="box-title edu-title">Ensino Superior</h3>
+                        <p class="edu-desc text-muted">Engenharia de Software — Universidade Católica do Salvador <br> 2026 - Atual</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. CONTACT -->
+        <section id="section-contact" class="page-section">
+            <div class="section-content center-layout">
+                <h1 class="main-heading">Vamos trabalhar juntos</h1>
+                <p class="contact-sub">Tem um projeto em mente? Adoraria ouvir sobre ele.<br>Vamos criar algo incrível juntos.</p>
+                <div class="social-dots">
+                    <a href="https://instagram.com/dasilva.code" target="_blank" rel="noopener noreferrer" class="dot tooltip-wrap" data-tooltip="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/thigadasilva" target="_blank" rel="noopener noreferrer" class="dot tooltip-wrap" data-tooltip="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com/thigadasilva" target="_blank" rel="noopener noreferrer" class="dot tooltip-wrap" data-tooltip="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="mailto:dasilvacoding@gmail.com" class="dot tooltip-wrap" data-tooltip="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+                <div class="footer-area">
+                    <p class="copyright">© Thiago da Silva, 2026, todos os direitos reservados</p>
+                </div>
+            </div>
+        </section>
+
+    <script src="starfield.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
